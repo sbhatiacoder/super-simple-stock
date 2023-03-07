@@ -1,0 +1,23 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.9.RELEASE")
+        // spring boot gradle plugin will used for generate jar
+    }
+}
+repositories {
+    mavenCentral()
+}
+description = "Super Simple Stock Application"
+apply plugin: 'java' // plugin for java
+apply plugin: 'org.springframework.boot' // plugin for spring boot framework
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    testCompile 'junit:junit'// web application dependency
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
+}
+sourceCompatibility = 1.8 // for Java 1.8
+targetCompatibility = 1.8
