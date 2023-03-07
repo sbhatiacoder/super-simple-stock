@@ -17,6 +17,7 @@ The solutions is developed using Java, Spring, Gradle with maven repository usag
 
 # Build commands
 gralde build
+
 Run SpringBoot Application class - SuperSimpleStockApplication
 
 # The Source
